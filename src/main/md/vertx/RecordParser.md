@@ -7,3 +7,6 @@
 - delimitedMode(delim)
 - fixedSizeMode(size)
 - handle(buffer)
+mHelo  t1
+t2
+t3

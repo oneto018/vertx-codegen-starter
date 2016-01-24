@@ -1,0 +1,71 @@
+# io.vertx.core.http.HttpServerRequest - d
+##imported types concrete:true{java.lang=[Throwable, Void, String], io.vertx.core=[MultiMap, Handler], io.vertx.core.streams=[ReadStream], io.vertx.core.net=[SocketAddress, NetSocket], io.vertx.core.http=[HttpServerRequest, ServerWebSocket, HttpServerFileUpload, HttpVersion, HttpMethod, HttpServerResponse], io.vertx.core.buffer=[Buffer]} - java.lang.Throwable  , pkg = java.lang
+- java.lang.Void  , pkg = java.lang
+- io.vertx.core.http.HttpServerRequest  , pkg = io.vertx.core.http
+- io.vertx.core.http.ServerWebSocket  , pkg = io.vertx.core.http
+- io.vertx.core.http.HttpServerFileUpload  , pkg = io.vertx.core.http
+- io.vertx.core.MultiMap  , pkg = io.vertx.core
+- io.vertx.core.buffer.Buffer  , pkg = io.vertx.core.buffer
+- io.vertx.core.http.HttpVersion  , pkg = io.vertx.core.http
+- io.vertx.core.http.HttpMethod  , pkg = io.vertx.core.http
+- io.vertx.core.http.HttpServerResponse  , pkg = io.vertx.core.http
+- io.vertx.core.streams.ReadStream  , pkg = io.vertx.core.streams
+- java.lang.String  , pkg = java.lang
+- io.vertx.core.Handler  , pkg = io.vertx.core
+- io.vertx.core.net.SocketAddress  , pkg = io.vertx.core.net
+- io.vertx.core.net.NetSocket  , pkg = io.vertx.core.net
+## Methods- exceptionHandler(handler )
+- handler(handler )
+- pause()
+- resume()
+- endHandler(endHandler )
+- version()
+- method()
+- uri()
+- path()
+- query()
+- response()
+- headers()
+- getHeader(headerName )
+- params()
+- getParam(paramName )
+- remoteAddress()
+- localAddress()
+- absoluteURI()
+- bodyHandler(bodyHandler )
+- netSocket()
+- setExpectMultipart(expect )
+- isExpectMultipart()
+- uploadHandler(uploadHandler )
+- formAttributes()
+- getFormAttribute(attributeName )
+- upgrade()
+- isEnded()
+#method map{handler=[io.vertx.core.http.HttpServerRequest handler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> handler)], absoluteURI=[java.lang.String absoluteURI()], netSocket=[io.vertx.core.net.NetSocket netSocket()], getHeader=[java.lang.String getHeader(java.lang.String headerName)], path=[java.lang.String path()], formAttributes=[io.vertx.core.MultiMap formAttributes()], bodyHandler=[io.vertx.core.http.HttpServerRequest bodyHandler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> bodyHandler)], isEnded=[boolean isEnded()], uploadHandler=[io.vertx.core.http.HttpServerRequest uploadHandler(io.vertx.core.Handler<io.vertx.core.http.HttpServerFileUpload> uploadHandler)], remoteAddress=[io.vertx.core.net.SocketAddress remoteAddress()], resume=[io.vertx.core.http.HttpServerRequest resume()], headers=[io.vertx.core.MultiMap headers()], getParam=[java.lang.String getParam(java.lang.String paramName)], method=[io.vertx.core.http.HttpMethod method()], upgrade=[io.vertx.core.http.ServerWebSocket upgrade()], query=[java.lang.String query()], params=[io.vertx.core.MultiMap params()], version=[io.vertx.core.http.HttpVersion version()], uri=[java.lang.String uri()], pause=[io.vertx.core.http.HttpServerRequest pause()], getFormAttribute=[java.lang.String getFormAttribute(java.lang.String attributeName)], endHandler=[io.vertx.core.http.HttpServerRequest endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)], isExpectMultipart=[boolean isExpectMultipart()], response=[io.vertx.core.http.HttpServerResponse response()], localAddress=[io.vertx.core.net.SocketAddress localAddress()], exceptionHandler=[io.vertx.core.http.HttpServerRequest exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)], setExpectMultipart=[io.vertx.core.http.HttpServerRequest setExpectMultipart(boolean expect)]} 
+- handler , [io.vertx.core.http.HttpServerRequest handler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> handler)]
+- absoluteURI , [java.lang.String absoluteURI()]
+- netSocket , [io.vertx.core.net.NetSocket netSocket()]
+- getHeader , [java.lang.String getHeader(java.lang.String headerName)]
+- path , [java.lang.String path()]
+- formAttributes , [io.vertx.core.MultiMap formAttributes()]
+- bodyHandler , [io.vertx.core.http.HttpServerRequest bodyHandler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> bodyHandler)]
+- isEnded , [boolean isEnded()]
+- uploadHandler , [io.vertx.core.http.HttpServerRequest uploadHandler(io.vertx.core.Handler<io.vertx.core.http.HttpServerFileUpload> uploadHandler)]
+- remoteAddress , [io.vertx.core.net.SocketAddress remoteAddress()]
+- resume , [io.vertx.core.http.HttpServerRequest resume()]
+- headers , [io.vertx.core.MultiMap headers()]
+- getParam , [java.lang.String getParam(java.lang.String paramName)]
+- method , [io.vertx.core.http.HttpMethod method()]
+- upgrade , [io.vertx.core.http.ServerWebSocket upgrade()]
+- query , [java.lang.String query()]
+- params , [io.vertx.core.MultiMap params()]
+- version , [io.vertx.core.http.HttpVersion version()]
+- uri , [java.lang.String uri()]
+- pause , [io.vertx.core.http.HttpServerRequest pause()]
+- getFormAttribute , [java.lang.String getFormAttribute(java.lang.String attributeName)]
+- endHandler , [io.vertx.core.http.HttpServerRequest endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)]
+- isExpectMultipart , [boolean isExpectMultipart()]
+- response , [io.vertx.core.http.HttpServerResponse response()]
+- localAddress , [io.vertx.core.net.SocketAddress localAddress()]
+- exceptionHandler , [io.vertx.core.http.HttpServerRequest exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)]
+- setExpectMultipart , [io.vertx.core.http.HttpServerRequest setExpectMultipart(boolean expect)]

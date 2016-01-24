@@ -7,3 +7,6 @@
 - isRegularFile()
 - isSymbolicLink()
 - size()
+mHelo  t1
+t2
+t3

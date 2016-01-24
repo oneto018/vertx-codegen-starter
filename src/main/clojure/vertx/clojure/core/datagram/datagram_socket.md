@@ -1,0 +1,48 @@
+# io.vertx.core.datagram.DatagramSocket - d
+##imported types concrete:true{java.lang=[Throwable, Void, String], io.vertx.core.datagram=[PacketWritestream, DatagramPacket, DatagramSocket], io.vertx.core.streams=[ReadStream], io.vertx.core=[AsyncResult, Handler], io.vertx.core.metrics=[Measured], io.vertx.core.net=[SocketAddress], io.vertx.core.buffer=[Buffer]} - java.lang.Throwable  , pkg = java.lang
+- java.lang.Void  , pkg = java.lang
+- io.vertx.core.datagram.PacketWritestream  , pkg = io.vertx.core.datagram
+- io.vertx.core.buffer.Buffer  , pkg = io.vertx.core.buffer
+- io.vertx.core.datagram.DatagramPacket  , pkg = io.vertx.core.datagram
+- io.vertx.core.metrics.Measured  , pkg = io.vertx.core.metrics
+- io.vertx.core.datagram.DatagramSocket  , pkg = io.vertx.core.datagram
+- io.vertx.core.streams.ReadStream  , pkg = io.vertx.core.streams
+- java.lang.String  , pkg = java.lang
+- io.vertx.core.AsyncResult  , pkg = io.vertx.core
+- io.vertx.core.Handler  , pkg = io.vertx.core
+- io.vertx.core.net.SocketAddress  , pkg = io.vertx.core.net
+## Methods- isMetricsEnabled()
+- send(packet ,port ,host ,handler )
+- sender(port ,host )
+- send(str ,port ,host ,handler )
+- send(str ,enc ,port ,host ,handler )
+- close(handler )
+- close()
+- localAddress()
+- listenMulticastGroup(multicastAddress ,handler )
+- listenMulticastGroup(multicastAddress ,networkInterface ,source ,handler )
+- unlistenMulticastGroup(multicastAddress ,handler )
+- unlistenMulticastGroup(multicastAddress ,networkInterface ,source ,handler )
+- blockMulticastGroup(multicastAddress ,sourceToBlock ,handler )
+- blockMulticastGroup(multicastAddress ,networkInterface ,sourceToBlock ,handler )
+- listen(port ,host ,handler )
+- pause()
+- resume()
+- endHandler(endHandler )
+- handler(handler )
+- exceptionHandler(handler )
+#method map{isMetricsEnabled=[boolean isMetricsEnabled()], resume=[io.vertx.core.datagram.DatagramSocket resume()], handler=[io.vertx.core.datagram.DatagramSocket handler(io.vertx.core.Handler<io.vertx.core.datagram.DatagramPacket> handler)], unlistenMulticastGroup=[io.vertx.core.datagram.DatagramSocket unlistenMulticastGroup(java.lang.String multicastAddress, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket unlistenMulticastGroup(java.lang.String multicastAddress, java.lang.String networkInterface, java.lang.String source, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)], listenMulticastGroup=[io.vertx.core.datagram.DatagramSocket listenMulticastGroup(java.lang.String multicastAddress, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket listenMulticastGroup(java.lang.String multicastAddress, java.lang.String networkInterface, java.lang.String source, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)], blockMulticastGroup=[io.vertx.core.datagram.DatagramSocket blockMulticastGroup(java.lang.String multicastAddress, java.lang.String sourceToBlock, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket blockMulticastGroup(java.lang.String multicastAddress, java.lang.String networkInterface, java.lang.String sourceToBlock, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)], listen=[io.vertx.core.datagram.DatagramSocket listen(int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)], pause=[io.vertx.core.datagram.DatagramSocket pause()], sender=[io.vertx.core.datagram.PacketWritestream sender(int port, java.lang.String host)], endHandler=[io.vertx.core.datagram.DatagramSocket endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)], localAddress=[io.vertx.core.net.SocketAddress localAddress()], send=[io.vertx.core.datagram.DatagramSocket send(io.vertx.core.buffer.Buffer packet, int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket send(java.lang.String str, int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket send(java.lang.String str, java.lang.String enc, int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)], close=[void close(io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), void close()], exceptionHandler=[io.vertx.core.datagram.DatagramSocket exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)]} 
+- isMetricsEnabled , [boolean isMetricsEnabled()]
+- resume , [io.vertx.core.datagram.DatagramSocket resume()]
+- handler , [io.vertx.core.datagram.DatagramSocket handler(io.vertx.core.Handler<io.vertx.core.datagram.DatagramPacket> handler)]
+- unlistenMulticastGroup , [io.vertx.core.datagram.DatagramSocket unlistenMulticastGroup(java.lang.String multicastAddress, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket unlistenMulticastGroup(java.lang.String multicastAddress, java.lang.String networkInterface, java.lang.String source, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)]
+- listenMulticastGroup , [io.vertx.core.datagram.DatagramSocket listenMulticastGroup(java.lang.String multicastAddress, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket listenMulticastGroup(java.lang.String multicastAddress, java.lang.String networkInterface, java.lang.String source, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)]
+- blockMulticastGroup , [io.vertx.core.datagram.DatagramSocket blockMulticastGroup(java.lang.String multicastAddress, java.lang.String sourceToBlock, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket blockMulticastGroup(java.lang.String multicastAddress, java.lang.String networkInterface, java.lang.String sourceToBlock, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)]
+- listen , [io.vertx.core.datagram.DatagramSocket listen(int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)]
+- pause , [io.vertx.core.datagram.DatagramSocket pause()]
+- sender , [io.vertx.core.datagram.PacketWritestream sender(int port, java.lang.String host)]
+- endHandler , [io.vertx.core.datagram.DatagramSocket endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)]
+- localAddress , [io.vertx.core.net.SocketAddress localAddress()]
+- send , [io.vertx.core.datagram.DatagramSocket send(io.vertx.core.buffer.Buffer packet, int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket send(java.lang.String str, int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler), io.vertx.core.datagram.DatagramSocket send(java.lang.String str, java.lang.String enc, int port, java.lang.String host, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.datagram.DatagramSocket>> handler)]
+- close , [void close(io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), void close()]
+- exceptionHandler , [io.vertx.core.datagram.DatagramSocket exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)]

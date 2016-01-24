@@ -1,0 +1,43 @@
+# io.vertx.core.file.AsyncFile - d
+##imported types concrete:true{java.lang=[Throwable, Void], io.vertx.core.streams=[WriteStream, ReadStream], io.vertx.core=[AsyncResult, Handler], io.vertx.core.file=[AsyncFile], io.vertx.core.buffer=[Buffer]} - java.lang.Throwable  , pkg = java.lang
+- io.vertx.core.file.AsyncFile  , pkg = io.vertx.core.file
+- java.lang.Void  , pkg = java.lang
+- io.vertx.core.buffer.Buffer  , pkg = io.vertx.core.buffer
+- io.vertx.core.streams.WriteStream  , pkg = io.vertx.core.streams
+- io.vertx.core.streams.ReadStream  , pkg = io.vertx.core.streams
+- io.vertx.core.AsyncResult  , pkg = io.vertx.core
+- io.vertx.core.Handler  , pkg = io.vertx.core
+## Methods- writeQueueFull()
+- handler(handler )
+- pause()
+- resume()
+- endHandler(endHandler )
+- write(data )
+- setWriteQueueMaxSize(maxSize )
+- drainHandler(handler )
+- exceptionHandler(handler )
+- close()
+- close(handler )
+- write(buffer ,position ,handler )
+- read(buffer ,offset ,position ,length ,handler )
+- flush()
+- flush(handler )
+- setReadPos(readPos )
+- setWritePos(writePos )
+- setReadBufferSize(readBufferSize )
+#method map{resume=[io.vertx.core.file.AsyncFile resume()], setReadBufferSize=[io.vertx.core.file.AsyncFile setReadBufferSize(int readBufferSize)], handler=[io.vertx.core.file.AsyncFile handler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> handler)], read=[io.vertx.core.file.AsyncFile read(io.vertx.core.buffer.Buffer buffer, int offset, long position, int length, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.buffer.Buffer>> handler)], writeQueueFull=[boolean writeQueueFull()], pause=[io.vertx.core.file.AsyncFile pause()], setWriteQueueMaxSize=[io.vertx.core.file.AsyncFile setWriteQueueMaxSize(int maxSize)], drainHandler=[io.vertx.core.file.AsyncFile drainHandler(io.vertx.core.Handler<java.lang.Void> handler)], flush=[io.vertx.core.file.AsyncFile flush(), io.vertx.core.file.AsyncFile flush(io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], setWritePos=[io.vertx.core.file.AsyncFile setWritePos(long writePos)], endHandler=[io.vertx.core.file.AsyncFile endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)], write=[io.vertx.core.file.AsyncFile write(io.vertx.core.buffer.Buffer data), io.vertx.core.file.AsyncFile write(io.vertx.core.buffer.Buffer buffer, long position, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], exceptionHandler=[io.vertx.core.file.AsyncFile exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)], close=[void close(), void close(io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], setReadPos=[io.vertx.core.file.AsyncFile setReadPos(long readPos)]} 
+- resume , [io.vertx.core.file.AsyncFile resume()]
+- setReadBufferSize , [io.vertx.core.file.AsyncFile setReadBufferSize(int readBufferSize)]
+- handler , [io.vertx.core.file.AsyncFile handler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> handler)]
+- read , [io.vertx.core.file.AsyncFile read(io.vertx.core.buffer.Buffer buffer, int offset, long position, int length, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.buffer.Buffer>> handler)]
+- writeQueueFull , [boolean writeQueueFull()]
+- pause , [io.vertx.core.file.AsyncFile pause()]
+- setWriteQueueMaxSize , [io.vertx.core.file.AsyncFile setWriteQueueMaxSize(int maxSize)]
+- drainHandler , [io.vertx.core.file.AsyncFile drainHandler(io.vertx.core.Handler<java.lang.Void> handler)]
+- flush , [io.vertx.core.file.AsyncFile flush(), io.vertx.core.file.AsyncFile flush(io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- setWritePos , [io.vertx.core.file.AsyncFile setWritePos(long writePos)]
+- endHandler , [io.vertx.core.file.AsyncFile endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)]
+- write , [io.vertx.core.file.AsyncFile write(io.vertx.core.buffer.Buffer data), io.vertx.core.file.AsyncFile write(io.vertx.core.buffer.Buffer buffer, long position, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- exceptionHandler , [io.vertx.core.file.AsyncFile exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)]
+- close , [void close(), void close(io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- setReadPos , [io.vertx.core.file.AsyncFile setReadPos(long readPos)]

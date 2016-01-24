@@ -10,3 +10,6 @@
 - replaceIfPresent(key,oldValue,newValue)
 - replace(key,value)
 - close()
+mHelo  t1
+t2
+t3

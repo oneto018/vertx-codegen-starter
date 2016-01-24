@@ -1,7 +1,23 @@
 # @{type.raw.name}\n
 
+@code{
+	def hello() { 
+		"mHelo  t1\n
+		t2\n
+		t3\n" 
+	}
+
+	def m1(){
+		hello()
+		
+	}
+	
+}
+
 ## Methods
 
 @foreach{method:methods}
 - @{method.name}(@foreach{param:method.params}@{param.name}@end{','})\n
 @end{}
+
+@{m1()}

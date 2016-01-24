@@ -1,0 +1,90 @@
+# io.vertx.core.buffer.Buffer - d
+##imported types concrete:true{java.lang=[String], io.vertx.core.shareddata.impl=[ClusterSerializable], io.vertx.core.buffer=[Buffer]} - io.vertx.core.buffer.Buffer  , pkg = io.vertx.core.buffer
+- io.vertx.core.shareddata.impl.ClusterSerializable  , pkg = io.vertx.core.shareddata.impl
+- java.lang.String  , pkg = java.lang
+## Methods- buffer()
+- buffer(initialSizeHint )
+- buffer(string )
+- buffer(string ,enc )
+- toString(enc )
+- getByte(pos )
+- getUnsignedByte(pos )
+- getInt(pos )
+- getUnsignedInt(pos )
+- getLong(pos )
+- getDouble(pos )
+- getFloat(pos )
+- getShort(pos )
+- getUnsignedShort(pos )
+- getBuffer(start ,end )
+- getString(start ,end ,enc )
+- getString(start ,end )
+- appendBuffer(buff )
+- appendBuffer(buff ,offset ,len )
+- appendByte(b )
+- appendUnsignedByte(b )
+- appendInt(i )
+- appendUnsignedInt(i )
+- appendLong(l )
+- appendShort(s )
+- appendUnsignedShort(s )
+- appendFloat(f )
+- appendDouble(d )
+- appendString(str ,enc )
+- appendString(str )
+- setByte(pos ,b )
+- setUnsignedByte(pos ,b )
+- setInt(pos ,i )
+- setUnsignedInt(pos ,i )
+- setLong(pos ,l )
+- setDouble(pos ,d )
+- setFloat(pos ,f )
+- setShort(pos ,s )
+- setUnsignedShort(pos ,s )
+- setBuffer(pos ,b )
+- setBuffer(pos ,b ,offset ,len )
+- setString(pos ,str )
+- setString(pos ,str ,enc )
+- length()
+- copy()
+- slice()
+- slice(start ,end )
+#method map{appendDouble=[io.vertx.core.buffer.Buffer appendDouble(double d)], appendLong=[io.vertx.core.buffer.Buffer appendLong(long l)], setByte=[io.vertx.core.buffer.Buffer setByte(int pos, byte b)], getByte=[byte getByte(int pos)], getBuffer=[io.vertx.core.buffer.Buffer getBuffer(int start, int end)], setUnsignedInt=[io.vertx.core.buffer.Buffer setUnsignedInt(int pos, long i)], getDouble=[double getDouble(int pos)], appendBuffer=[io.vertx.core.buffer.Buffer appendBuffer(io.vertx.core.buffer.Buffer buff), io.vertx.core.buffer.Buffer appendBuffer(io.vertx.core.buffer.Buffer buff, int offset, int len)], appendUnsignedInt=[io.vertx.core.buffer.Buffer appendUnsignedInt(long i)], setUnsignedShort=[io.vertx.core.buffer.Buffer setUnsignedShort(int pos, int s)], getFloat=[float getFloat(int pos)], setShort=[io.vertx.core.buffer.Buffer setShort(int pos, short s)], appendFloat=[io.vertx.core.buffer.Buffer appendFloat(float f)], setDouble=[io.vertx.core.buffer.Buffer setDouble(int pos, double d)], appendUnsignedByte=[io.vertx.core.buffer.Buffer appendUnsignedByte(short b)], slice=[io.vertx.core.buffer.Buffer slice(), io.vertx.core.buffer.Buffer slice(int start, int end)], buffer=[io.vertx.core.buffer.Buffer buffer(), io.vertx.core.buffer.Buffer buffer(int initialSizeHint), io.vertx.core.buffer.Buffer buffer(java.lang.String string), io.vertx.core.buffer.Buffer buffer(java.lang.String string, java.lang.String enc)], copy=[io.vertx.core.buffer.Buffer copy()], getUnsignedInt=[long getUnsignedInt(int pos)], setUnsignedByte=[io.vertx.core.buffer.Buffer setUnsignedByte(int pos, short b)], setFloat=[io.vertx.core.buffer.Buffer setFloat(int pos, float f)], appendString=[io.vertx.core.buffer.Buffer appendString(java.lang.String str, java.lang.String enc), io.vertx.core.buffer.Buffer appendString(java.lang.String str)], getShort=[short getShort(int pos)], setBuffer=[io.vertx.core.buffer.Buffer setBuffer(int pos, io.vertx.core.buffer.Buffer b), io.vertx.core.buffer.Buffer setBuffer(int pos, io.vertx.core.buffer.Buffer b, int offset, int len)], appendShort=[io.vertx.core.buffer.Buffer appendShort(short s)], length=[int length()], getUnsignedShort=[int getUnsignedShort(int pos)], getUnsignedByte=[short getUnsignedByte(int pos)], getString=[java.lang.String getString(int start, int end, java.lang.String enc), java.lang.String getString(int start, int end)], appendUnsignedShort=[io.vertx.core.buffer.Buffer appendUnsignedShort(int s)], setInt=[io.vertx.core.buffer.Buffer setInt(int pos, int i)], getLong=[long getLong(int pos)], getInt=[int getInt(int pos)], appendByte=[io.vertx.core.buffer.Buffer appendByte(byte b)], setLong=[io.vertx.core.buffer.Buffer setLong(int pos, long l)], setString=[io.vertx.core.buffer.Buffer setString(int pos, java.lang.String str), io.vertx.core.buffer.Buffer setString(int pos, java.lang.String str, java.lang.String enc)], appendInt=[io.vertx.core.buffer.Buffer appendInt(int i)], toString=[java.lang.String toString(java.lang.String enc)]} 
+- appendDouble , [io.vertx.core.buffer.Buffer appendDouble(double d)]
+- appendLong , [io.vertx.core.buffer.Buffer appendLong(long l)]
+- setByte , [io.vertx.core.buffer.Buffer setByte(int pos, byte b)]
+- getByte , [byte getByte(int pos)]
+- getBuffer , [io.vertx.core.buffer.Buffer getBuffer(int start, int end)]
+- setUnsignedInt , [io.vertx.core.buffer.Buffer setUnsignedInt(int pos, long i)]
+- getDouble , [double getDouble(int pos)]
+- appendBuffer , [io.vertx.core.buffer.Buffer appendBuffer(io.vertx.core.buffer.Buffer buff), io.vertx.core.buffer.Buffer appendBuffer(io.vertx.core.buffer.Buffer buff, int offset, int len)]
+- appendUnsignedInt , [io.vertx.core.buffer.Buffer appendUnsignedInt(long i)]
+- setUnsignedShort , [io.vertx.core.buffer.Buffer setUnsignedShort(int pos, int s)]
+- getFloat , [float getFloat(int pos)]
+- setShort , [io.vertx.core.buffer.Buffer setShort(int pos, short s)]
+- appendFloat , [io.vertx.core.buffer.Buffer appendFloat(float f)]
+- setDouble , [io.vertx.core.buffer.Buffer setDouble(int pos, double d)]
+- appendUnsignedByte , [io.vertx.core.buffer.Buffer appendUnsignedByte(short b)]
+- slice , [io.vertx.core.buffer.Buffer slice(), io.vertx.core.buffer.Buffer slice(int start, int end)]
+- buffer , [io.vertx.core.buffer.Buffer buffer(), io.vertx.core.buffer.Buffer buffer(int initialSizeHint), io.vertx.core.buffer.Buffer buffer(java.lang.String string), io.vertx.core.buffer.Buffer buffer(java.lang.String string, java.lang.String enc)]
+- copy , [io.vertx.core.buffer.Buffer copy()]
+- getUnsignedInt , [long getUnsignedInt(int pos)]
+- setUnsignedByte , [io.vertx.core.buffer.Buffer setUnsignedByte(int pos, short b)]
+- setFloat , [io.vertx.core.buffer.Buffer setFloat(int pos, float f)]
+- appendString , [io.vertx.core.buffer.Buffer appendString(java.lang.String str, java.lang.String enc), io.vertx.core.buffer.Buffer appendString(java.lang.String str)]
+- getShort , [short getShort(int pos)]
+- setBuffer , [io.vertx.core.buffer.Buffer setBuffer(int pos, io.vertx.core.buffer.Buffer b), io.vertx.core.buffer.Buffer setBuffer(int pos, io.vertx.core.buffer.Buffer b, int offset, int len)]
+- appendShort , [io.vertx.core.buffer.Buffer appendShort(short s)]
+- length , [int length()]
+- getUnsignedShort , [int getUnsignedShort(int pos)]
+- getUnsignedByte , [short getUnsignedByte(int pos)]
+- getString , [java.lang.String getString(int start, int end, java.lang.String enc), java.lang.String getString(int start, int end)]
+- appendUnsignedShort , [io.vertx.core.buffer.Buffer appendUnsignedShort(int s)]
+- setInt , [io.vertx.core.buffer.Buffer setInt(int pos, int i)]
+- getLong , [long getLong(int pos)]
+- getInt , [int getInt(int pos)]
+- appendByte , [io.vertx.core.buffer.Buffer appendByte(byte b)]
+- setLong , [io.vertx.core.buffer.Buffer setLong(int pos, long l)]
+- setString , [io.vertx.core.buffer.Buffer setString(int pos, java.lang.String str), io.vertx.core.buffer.Buffer setString(int pos, java.lang.String str, java.lang.String enc)]
+- appendInt , [io.vertx.core.buffer.Buffer appendInt(int i)]
+- toString , [java.lang.String toString(java.lang.String enc)]

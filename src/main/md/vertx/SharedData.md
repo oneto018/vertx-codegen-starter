@@ -4,3 +4,6 @@
 - getLockWithTimeout(name,timeout,resultHandler)
 - getCounter(name,resultHandler)
 - getLocalMap(name)
+mHelo  t1
+t2
+t3

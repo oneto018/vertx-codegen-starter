@@ -1,0 +1,11 @@
+@include{'./common.templ'}
+@code{
+	importsMap = getGroupedImports(importedTypes);
+}
+(ns @{get_namespace(type.raw.name)} \n
+  (:require [camel-snake-kebab.core :refer :all]\n
+            [vertx.clojure.utils.main :as util])\n
+  (:import \n
+  		 @foreach{importItemKey:importsMap.keySet()}
+  		(@{importItemKey} @foreach{importClass:importsMap.get(importItemKey)} @{importClass}@end{})\n
+  		@end{}))\n

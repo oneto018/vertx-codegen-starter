@@ -46,3 +46,6 @@
 - copy()
 - slice()
 - slice(start,end)
+mHelo  t1
+t2
+t3

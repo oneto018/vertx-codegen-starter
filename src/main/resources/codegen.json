@@ -2,7 +2,11 @@
   "name": "md-generator",
   "generators": [ {
     "kind": "class",
-    "fileName": "'md/' + type.raw.moduleName + '/' + type.raw.simpleName + '.md'",
-    "templateFileName": "class-md.templ"
+    "fileName": "'clojure/'+helper.convertCamelCaseToUnderscores(fqn.replace('io.vertx', 'vertx.clojure').replace('.', '/'))+'.md'",
+    "templateFileName": "class-clj.templ"
+  },{
+    "kind": "class",
+    "fileName": "'clojure/'+helper.convertCamelCaseToUnderscores(fqn.replace('io.vertx', 'vertx.clojure').replace('.', '/'))+'.clj'",
+    "templateFileName": "class-clj2.templ"
   }]
 }

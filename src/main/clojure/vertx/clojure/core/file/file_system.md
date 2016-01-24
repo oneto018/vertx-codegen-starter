@@ -1,0 +1,118 @@
+# io.vertx.core.file.FileSystem - d
+##imported types concrete:true{java.lang=[Void, Boolean, String], java.util=[List], io.vertx.core=[AsyncResult, Handler], io.vertx.core.file=[AsyncFile, OpenOptions, FileSystem, FileSystemProps, FileProps], io.vertx.core.buffer=[Buffer]} - java.lang.Void  , pkg = java.lang
+- io.vertx.core.file.AsyncFile  , pkg = io.vertx.core.file
+- java.util.List  , pkg = java.util
+- io.vertx.core.buffer.Buffer  , pkg = io.vertx.core.buffer
+- io.vertx.core.file.OpenOptions  , pkg = io.vertx.core.file
+- io.vertx.core.file.FileSystem  , pkg = io.vertx.core.file
+- java.lang.Boolean  , pkg = java.lang
+- java.lang.String  , pkg = java.lang
+- io.vertx.core.AsyncResult  , pkg = io.vertx.core
+- io.vertx.core.Handler  , pkg = io.vertx.core
+- io.vertx.core.file.FileSystemProps  , pkg = io.vertx.core.file
+- io.vertx.core.file.FileProps  , pkg = io.vertx.core.file
+## Methods- copy(from ,to ,handler )
+- copyBlocking(from ,to )
+- copyRecursive(from ,to ,recursive ,handler )
+- copyRecursiveBlocking(from ,to ,recursive )
+- move(from ,to ,handler )
+- moveBlocking(from ,to )
+- truncate(path ,len ,handler )
+- truncateBlocking(path ,len )
+- chmod(path ,perms ,handler )
+- chmodBlocking(path ,perms )
+- chmodRecursive(path ,perms ,dirPerms ,handler )
+- chmodRecursiveBlocking(path ,perms ,dirPerms )
+- chown(path ,user ,group ,handler )
+- chownBlocking(path ,user ,group )
+- props(path ,handler )
+- propsBlocking(path )
+- lprops(path ,handler )
+- lpropsBlocking(path )
+- link(link ,existing ,handler )
+- linkBlocking(link ,existing )
+- symlink(link ,existing ,handler )
+- symlinkBlocking(link ,existing )
+- unlink(link ,handler )
+- unlinkBlocking(link )
+- readSymlink(link ,handler )
+- readSymlinkBlocking(link )
+- delete(path ,handler )
+- deleteBlocking(path )
+- deleteRecursive(path ,recursive ,handler )
+- deleteRecursiveBlocking(path ,recursive )
+- mkdir(path ,handler )
+- mkdirBlocking(path )
+- mkdir(path ,perms ,handler )
+- mkdirBlocking(path ,perms )
+- mkdirs(path ,handler )
+- mkdirsBlocking(path )
+- mkdirs(path ,perms ,handler )
+- mkdirsBlocking(path ,perms )
+- readDir(path ,handler )
+- readDirBlocking(path )
+- readDir(path ,filter ,handler )
+- readDirBlocking(path ,filter )
+- readFile(path ,handler )
+- readFileBlocking(path )
+- writeFile(path ,data ,handler )
+- writeFileBlocking(path ,data )
+- open(path ,options ,handler )
+- openBlocking(path ,options )
+- createFile(path ,handler )
+- createFileBlocking(path )
+- createFile(path ,perms ,handler )
+- createFileBlocking(path ,perms )
+- exists(path ,handler )
+- existsBlocking(path )
+- fsProps(path ,handler )
+- fsPropsBlocking(path )
+#method map{moveBlocking=[io.vertx.core.file.FileSystem moveBlocking(java.lang.String from, java.lang.String to)], symlinkBlocking=[io.vertx.core.file.FileSystem symlinkBlocking(java.lang.String link, java.lang.String existing)], deleteBlocking=[io.vertx.core.file.FileSystem deleteBlocking(java.lang.String path)], link=[io.vertx.core.file.FileSystem link(java.lang.String link, java.lang.String existing, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], readSymlink=[io.vertx.core.file.FileSystem readSymlink(java.lang.String link, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.String>> handler)], readSymlinkBlocking=[java.lang.String readSymlinkBlocking(java.lang.String link)], delete=[io.vertx.core.file.FileSystem delete(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], createFile=[io.vertx.core.file.FileSystem createFile(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), io.vertx.core.file.FileSystem createFile(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], readFileBlocking=[io.vertx.core.buffer.Buffer readFileBlocking(java.lang.String path)], chmodRecursiveBlocking=[io.vertx.core.file.FileSystem chmodRecursiveBlocking(java.lang.String path, java.lang.String perms, java.lang.String dirPerms)], truncate=[io.vertx.core.file.FileSystem truncate(java.lang.String path, long len, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], copyRecursive=[io.vertx.core.file.FileSystem copyRecursive(java.lang.String from, java.lang.String to, boolean recursive, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], symlink=[io.vertx.core.file.FileSystem symlink(java.lang.String link, java.lang.String existing, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], chmod=[io.vertx.core.file.FileSystem chmod(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], chmodBlocking=[io.vertx.core.file.FileSystem chmodBlocking(java.lang.String path, java.lang.String perms)], fsPropsBlocking=[io.vertx.core.file.FileSystemProps fsPropsBlocking(java.lang.String path)], copy=[io.vertx.core.file.FileSystem copy(java.lang.String from, java.lang.String to, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], copyRecursiveBlocking=[io.vertx.core.file.FileSystem copyRecursiveBlocking(java.lang.String from, java.lang.String to, boolean recursive)], deleteRecursive=[io.vertx.core.file.FileSystem deleteRecursive(java.lang.String path, boolean recursive, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], mkdir=[io.vertx.core.file.FileSystem mkdir(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), io.vertx.core.file.FileSystem mkdir(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], writeFile=[io.vertx.core.file.FileSystem writeFile(java.lang.String path, io.vertx.core.buffer.Buffer data, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], copyBlocking=[io.vertx.core.file.FileSystem copyBlocking(java.lang.String from, java.lang.String to)], chmodRecursive=[io.vertx.core.file.FileSystem chmodRecursive(java.lang.String path, java.lang.String perms, java.lang.String dirPerms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], chownBlocking=[io.vertx.core.file.FileSystem chownBlocking(java.lang.String path, java.lang.String user, java.lang.String group)], lpropsBlocking=[io.vertx.core.file.FileProps lpropsBlocking(java.lang.String path)], move=[io.vertx.core.file.FileSystem move(java.lang.String from, java.lang.String to, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], deleteRecursiveBlocking=[io.vertx.core.file.FileSystem deleteRecursiveBlocking(java.lang.String path, boolean recursive)], writeFileBlocking=[io.vertx.core.file.FileSystem writeFileBlocking(java.lang.String path, io.vertx.core.buffer.Buffer data)], createFileBlocking=[io.vertx.core.file.FileSystem createFileBlocking(java.lang.String path), io.vertx.core.file.FileSystem createFileBlocking(java.lang.String path, java.lang.String perms)], chown=[io.vertx.core.file.FileSystem chown(java.lang.String path, java.lang.String user, java.lang.String group, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], unlinkBlocking=[io.vertx.core.file.FileSystem unlinkBlocking(java.lang.String link)], linkBlocking=[io.vertx.core.file.FileSystem linkBlocking(java.lang.String link, java.lang.String existing)], openBlocking=[io.vertx.core.file.AsyncFile openBlocking(java.lang.String path, io.vertx.core.file.OpenOptions options)], truncateBlocking=[io.vertx.core.file.FileSystem truncateBlocking(java.lang.String path, long len)], mkdirsBlocking=[io.vertx.core.file.FileSystem mkdirsBlocking(java.lang.String path), io.vertx.core.file.FileSystem mkdirsBlocking(java.lang.String path, java.lang.String perms)], props=[io.vertx.core.file.FileSystem props(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.FileProps>> handler)], lprops=[io.vertx.core.file.FileSystem lprops(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.FileProps>> handler)], propsBlocking=[io.vertx.core.file.FileProps propsBlocking(java.lang.String path)], mkdirBlocking=[io.vertx.core.file.FileSystem mkdirBlocking(java.lang.String path), io.vertx.core.file.FileSystem mkdirBlocking(java.lang.String path, java.lang.String perms)], readDir=[io.vertx.core.file.FileSystem readDir(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.util.List<java.lang.String>>> handler), io.vertx.core.file.FileSystem readDir(java.lang.String path, java.lang.String filter, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.util.List<java.lang.String>>> handler)], unlink=[io.vertx.core.file.FileSystem unlink(java.lang.String link, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], readFile=[io.vertx.core.file.FileSystem readFile(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.buffer.Buffer>> handler)], existsBlocking=[boolean existsBlocking(java.lang.String path)], fsProps=[io.vertx.core.file.FileSystem fsProps(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.FileSystemProps>> handler)], mkdirs=[io.vertx.core.file.FileSystem mkdirs(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), io.vertx.core.file.FileSystem mkdirs(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)], exists=[io.vertx.core.file.FileSystem exists(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Boolean>> handler)], readDirBlocking=[java.util.List<java.lang.String> readDirBlocking(java.lang.String path), java.util.List<java.lang.String> readDirBlocking(java.lang.String path, java.lang.String filter)], open=[io.vertx.core.file.FileSystem open(java.lang.String path, io.vertx.core.file.OpenOptions options, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.AsyncFile>> handler)]} 
+- moveBlocking , [io.vertx.core.file.FileSystem moveBlocking(java.lang.String from, java.lang.String to)]
+- symlinkBlocking , [io.vertx.core.file.FileSystem symlinkBlocking(java.lang.String link, java.lang.String existing)]
+- deleteBlocking , [io.vertx.core.file.FileSystem deleteBlocking(java.lang.String path)]
+- link , [io.vertx.core.file.FileSystem link(java.lang.String link, java.lang.String existing, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- readSymlink , [io.vertx.core.file.FileSystem readSymlink(java.lang.String link, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.String>> handler)]
+- readSymlinkBlocking , [java.lang.String readSymlinkBlocking(java.lang.String link)]
+- delete , [io.vertx.core.file.FileSystem delete(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- createFile , [io.vertx.core.file.FileSystem createFile(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), io.vertx.core.file.FileSystem createFile(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- readFileBlocking , [io.vertx.core.buffer.Buffer readFileBlocking(java.lang.String path)]
+- chmodRecursiveBlocking , [io.vertx.core.file.FileSystem chmodRecursiveBlocking(java.lang.String path, java.lang.String perms, java.lang.String dirPerms)]
+- truncate , [io.vertx.core.file.FileSystem truncate(java.lang.String path, long len, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- copyRecursive , [io.vertx.core.file.FileSystem copyRecursive(java.lang.String from, java.lang.String to, boolean recursive, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- symlink , [io.vertx.core.file.FileSystem symlink(java.lang.String link, java.lang.String existing, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- chmod , [io.vertx.core.file.FileSystem chmod(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- chmodBlocking , [io.vertx.core.file.FileSystem chmodBlocking(java.lang.String path, java.lang.String perms)]
+- fsPropsBlocking , [io.vertx.core.file.FileSystemProps fsPropsBlocking(java.lang.String path)]
+- copy , [io.vertx.core.file.FileSystem copy(java.lang.String from, java.lang.String to, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- copyRecursiveBlocking , [io.vertx.core.file.FileSystem copyRecursiveBlocking(java.lang.String from, java.lang.String to, boolean recursive)]
+- deleteRecursive , [io.vertx.core.file.FileSystem deleteRecursive(java.lang.String path, boolean recursive, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- mkdir , [io.vertx.core.file.FileSystem mkdir(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), io.vertx.core.file.FileSystem mkdir(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- writeFile , [io.vertx.core.file.FileSystem writeFile(java.lang.String path, io.vertx.core.buffer.Buffer data, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- copyBlocking , [io.vertx.core.file.FileSystem copyBlocking(java.lang.String from, java.lang.String to)]
+- chmodRecursive , [io.vertx.core.file.FileSystem chmodRecursive(java.lang.String path, java.lang.String perms, java.lang.String dirPerms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- chownBlocking , [io.vertx.core.file.FileSystem chownBlocking(java.lang.String path, java.lang.String user, java.lang.String group)]
+- lpropsBlocking , [io.vertx.core.file.FileProps lpropsBlocking(java.lang.String path)]
+- move , [io.vertx.core.file.FileSystem move(java.lang.String from, java.lang.String to, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- deleteRecursiveBlocking , [io.vertx.core.file.FileSystem deleteRecursiveBlocking(java.lang.String path, boolean recursive)]
+- writeFileBlocking , [io.vertx.core.file.FileSystem writeFileBlocking(java.lang.String path, io.vertx.core.buffer.Buffer data)]
+- createFileBlocking , [io.vertx.core.file.FileSystem createFileBlocking(java.lang.String path), io.vertx.core.file.FileSystem createFileBlocking(java.lang.String path, java.lang.String perms)]
+- chown , [io.vertx.core.file.FileSystem chown(java.lang.String path, java.lang.String user, java.lang.String group, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- unlinkBlocking , [io.vertx.core.file.FileSystem unlinkBlocking(java.lang.String link)]
+- linkBlocking , [io.vertx.core.file.FileSystem linkBlocking(java.lang.String link, java.lang.String existing)]
+- openBlocking , [io.vertx.core.file.AsyncFile openBlocking(java.lang.String path, io.vertx.core.file.OpenOptions options)]
+- truncateBlocking , [io.vertx.core.file.FileSystem truncateBlocking(java.lang.String path, long len)]
+- mkdirsBlocking , [io.vertx.core.file.FileSystem mkdirsBlocking(java.lang.String path), io.vertx.core.file.FileSystem mkdirsBlocking(java.lang.String path, java.lang.String perms)]
+- props , [io.vertx.core.file.FileSystem props(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.FileProps>> handler)]
+- lprops , [io.vertx.core.file.FileSystem lprops(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.FileProps>> handler)]
+- propsBlocking , [io.vertx.core.file.FileProps propsBlocking(java.lang.String path)]
+- mkdirBlocking , [io.vertx.core.file.FileSystem mkdirBlocking(java.lang.String path), io.vertx.core.file.FileSystem mkdirBlocking(java.lang.String path, java.lang.String perms)]
+- readDir , [io.vertx.core.file.FileSystem readDir(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.util.List<java.lang.String>>> handler), io.vertx.core.file.FileSystem readDir(java.lang.String path, java.lang.String filter, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.util.List<java.lang.String>>> handler)]
+- unlink , [io.vertx.core.file.FileSystem unlink(java.lang.String link, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- readFile , [io.vertx.core.file.FileSystem readFile(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.buffer.Buffer>> handler)]
+- existsBlocking , [boolean existsBlocking(java.lang.String path)]
+- fsProps , [io.vertx.core.file.FileSystem fsProps(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.FileSystemProps>> handler)]
+- mkdirs , [io.vertx.core.file.FileSystem mkdirs(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler), io.vertx.core.file.FileSystem mkdirs(java.lang.String path, java.lang.String perms, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Void>> handler)]
+- exists , [io.vertx.core.file.FileSystem exists(java.lang.String path, io.vertx.core.Handler<io.vertx.core.AsyncResult<java.lang.Boolean>> handler)]
+- readDirBlocking , [java.util.List<java.lang.String> readDirBlocking(java.lang.String path), java.util.List<java.lang.String> readDirBlocking(java.lang.String path, java.lang.String filter)]
+- open , [io.vertx.core.file.FileSystem open(java.lang.String path, io.vertx.core.file.OpenOptions options, io.vertx.core.Handler<io.vertx.core.AsyncResult<io.vertx.core.file.AsyncFile>> handler)]

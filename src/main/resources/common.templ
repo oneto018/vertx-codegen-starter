@@ -1,0 +1,26 @@
+@code{
+import java.util.*;
+
+	def getGroupedImports(types){
+		Map mp1 = new HashMap();
+		foreach(type:types){
+			typeName = type.toString();
+			className = helper.getSimpleName(typeName);
+			pkgName = helper.getPackageName(type.toString());
+			if ( mp1.containsKey(pkgName) ) {
+				ArrayList oldVal = mp1.get(pkgName);
+				oldVal.add(className);
+				mp1.put(pkgName,oldVal);
+			} else {
+				ArrayList tmpVal = [className];
+				mp1.put(pkgName,tmpVal);
+			}
+		}
+		return mp1;
+	}
+
+	def get_namespace(typeName){
+		return helper.convertCamelCaseToUnderscores(typeName.replace('io.vertx', 'vertx.clojure')).replace('_','-');
+	}
+		
+}

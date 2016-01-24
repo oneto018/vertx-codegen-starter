@@ -1,0 +1,108 @@
+@code{
+import java.util.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.Writer;
+
+	def getGroupedImports(types){
+		Map mp1 = new HashMap();
+		foreach(type:types){
+			typeName = type.toString();
+			className = helper.getSimpleName(typeName);
+			pkgName = helper.getPackageName(type.toString());
+			if ( mp1.containsKey(pkgName) ) {
+				ArrayList oldVal = mp1.get(pkgName);
+				oldVal.add(className);
+				mp1.put(pkgName,oldVal);
+			} else {
+				ArrayList tmpVal = [className];
+				mp1.put(pkgName,tmpVal);
+			}
+		}
+		return mp1;
+	}
+
+	def get_namespace(typeName){
+		return helper.convertCamelCaseToUnderscores(typeName.replace('io.vertx', 'vertx.clojure')).replace('_','-');
+	}
+
+	def getGroupedMethods(methods){
+		Map mp1 = new HashMap();
+		ArrayList res = new ArrayList();
+		foreach(method:methods){
+			key = method.name;
+
+			if(mp1.containsKey(key)){
+				oldVal =mp1.get(key);
+				oldVal.add(method)
+				mp1.put(key,oldVal)
+				
+			} else {
+				oldVal = [method];
+				mp1.put(key,oldVal)
+			}
+		}
+
+		return mp1;
+	}
+
+	def get_ambigous_type_m(methods){
+		result =[];
+		mp1 = new HashMap();
+		foreach(method:methods){
+			key = method.params[0].type.name;
+			if(mp1.containsKey(key)){
+				oldVal = mp1.get(key);
+			} else {
+				oldVal =[];
+			}
+			oldVal.add(method);
+			mp1.put(key,oldVal);
+		}
+
+		foreach(k1:mp1.keySet()){
+			if(mp1.get(k1).size()>1){
+				result.add(mp1.get(k1));
+			}
+		}
+
+		return result;
+
+	}
+
+	def get_same_airity_methods(methods){
+		Map mp1 = new HashMap();
+		result = [];
+		foreach(method:methods){
+			psize = method.params.size();
+			if(mp1.containsKey(psize)){
+				oldVal = mp1.get(psize);
+				oldVal.add(method);
+				mp1.put(psize,oldVal);
+			} else {
+				mp1.put(psize,[method]);
+			}
+		}
+
+		foreach(k:mp1.keySet()){
+			curVal = mp1.get(k);
+			if(curVal.size()>1){
+				ambigous = get_ambigous_type_m(curVal);
+				if(ambigous.size()>0){
+					result.add(ambigous);
+				}
+				
+			}
+		}
+
+		return result;
+	}
+
+	def write_log(contents){
+		Writer output;
+		output = new BufferedWriter(new FileWriter('./log.txt',true));  //clears file every time
+		output.append(contents+"\n");
+		output.close();
+	}
+		
+}

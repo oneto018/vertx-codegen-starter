@@ -17,3 +17,6 @@
 - isSeenInCommandLine(option)
 - isValid()
 - isAskingForHelp()
+mHelo  t1
+t2
+t3

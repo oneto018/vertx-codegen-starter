@@ -11,3 +11,6 @@
 - resolveNS(name,handler)
 - resolveSRV(name,handler)
 - reverseLookup(ipaddress,handler)
+mHelo  t1
+t2
+t3

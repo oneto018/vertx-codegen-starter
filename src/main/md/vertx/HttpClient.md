@@ -102,3 +102,6 @@
 - websocketStream(requestURI,headers,version)
 - websocketStream(requestURI,headers,version,subProtocols)
 - close()
+mHelo  t1
+t2
+t3

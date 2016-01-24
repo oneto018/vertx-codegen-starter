@@ -1,0 +1,43 @@
+# io.vertx.core.cli.CommandLine - d
+##imported types concrete:true{io.vertx.core.cli=[Option, CommandLine, CLI, Argument], java.util=[List], java.lang=[String]} - io.vertx.core.cli.Option  , pkg = io.vertx.core.cli
+- java.util.List  , pkg = java.util
+- io.vertx.core.cli.CommandLine  , pkg = io.vertx.core.cli
+- io.vertx.core.cli.CLI  , pkg = io.vertx.core.cli
+- java.lang.String  , pkg = java.lang
+- io.vertx.core.cli.Argument  , pkg = io.vertx.core.cli
+## Methods- create(cli )
+- cli()
+- allArguments()
+- getOptionValue(name )
+- getArgumentValue(name )
+- getArgumentValue(index )
+- isFlagEnabled(name )
+- isOptionAssigned(option )
+- getRawValues(option )
+- getRawValuesForOption(option )
+- getRawValuesForArgument(argument )
+- getRawValueForOption(option )
+- acceptMoreValues(option )
+- getRawValueForArgument(arg )
+- isArgumentAssigned(arg )
+- isSeenInCommandLine(option )
+- isValid()
+- isAskingForHelp()
+#method map{getRawValuesForArgument=[java.util.List<java.lang.String> getRawValuesForArgument(io.vertx.core.cli.Argument argument)], cli=[io.vertx.core.cli.CLI cli()], getArgumentValue=[<T> T getArgumentValue(java.lang.String name), <T> T getArgumentValue(int index)], acceptMoreValues=[boolean acceptMoreValues(io.vertx.core.cli.Option option)], isValid=[boolean isValid()], getRawValueForArgument=[java.lang.String getRawValueForArgument(io.vertx.core.cli.Argument arg)], isArgumentAssigned=[boolean isArgumentAssigned(io.vertx.core.cli.Argument arg)], isOptionAssigned=[boolean isOptionAssigned(io.vertx.core.cli.Option option)], allArguments=[java.util.List<java.lang.String> allArguments()], getRawValuesForOption=[java.util.List<java.lang.String> getRawValuesForOption(io.vertx.core.cli.Option option)], isSeenInCommandLine=[boolean isSeenInCommandLine(io.vertx.core.cli.Option option)], isFlagEnabled=[boolean isFlagEnabled(java.lang.String name)], getOptionValue=[<T> T getOptionValue(java.lang.String name)], isAskingForHelp=[boolean isAskingForHelp()], create=[io.vertx.core.cli.CommandLine create(io.vertx.core.cli.CLI cli)], getRawValues=[java.util.List<java.lang.String> getRawValues(io.vertx.core.cli.Option option)], getRawValueForOption=[java.lang.String getRawValueForOption(io.vertx.core.cli.Option option)]} 
+- getRawValuesForArgument , [java.util.List<java.lang.String> getRawValuesForArgument(io.vertx.core.cli.Argument argument)]
+- cli , [io.vertx.core.cli.CLI cli()]
+- getArgumentValue , [<T> T getArgumentValue(java.lang.String name), <T> T getArgumentValue(int index)]
+- acceptMoreValues , [boolean acceptMoreValues(io.vertx.core.cli.Option option)]
+- isValid , [boolean isValid()]
+- getRawValueForArgument , [java.lang.String getRawValueForArgument(io.vertx.core.cli.Argument arg)]
+- isArgumentAssigned , [boolean isArgumentAssigned(io.vertx.core.cli.Argument arg)]
+- isOptionAssigned , [boolean isOptionAssigned(io.vertx.core.cli.Option option)]
+- allArguments , [java.util.List<java.lang.String> allArguments()]
+- getRawValuesForOption , [java.util.List<java.lang.String> getRawValuesForOption(io.vertx.core.cli.Option option)]
+- isSeenInCommandLine , [boolean isSeenInCommandLine(io.vertx.core.cli.Option option)]
+- isFlagEnabled , [boolean isFlagEnabled(java.lang.String name)]
+- getOptionValue , [<T> T getOptionValue(java.lang.String name)]
+- isAskingForHelp , [boolean isAskingForHelp()]
+- create , [io.vertx.core.cli.CommandLine create(io.vertx.core.cli.CLI cli)]
+- getRawValues , [java.util.List<java.lang.String> getRawValues(io.vertx.core.cli.Option option)]
+- getRawValueForOption , [java.lang.String getRawValueForOption(io.vertx.core.cli.Option option)]

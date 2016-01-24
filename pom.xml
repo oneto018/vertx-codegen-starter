@@ -27,6 +27,11 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojure</artifactId>
+      <version>1.7.0</version>
+    </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -186,6 +191,12 @@
             <version>4.11</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>com.theoryinpractise</groupId>
+        <artifactId>clojure-maven-plugin</artifactId>
+        <version>1.7.1</version>
+        <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>

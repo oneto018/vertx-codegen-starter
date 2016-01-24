@@ -1,0 +1,52 @@
+# io.vertx.core.http.WebSocketBase - d
+##imported types concrete:false{java.lang=[Throwable, Void, String], io.vertx.core.streams=[WriteStream, ReadStream], io.vertx.core=[Handler], io.vertx.core.net=[SocketAddress], io.vertx.core.http=[WebSocketBase, WebSocketFrame], io.vertx.core.buffer=[Buffer]} - java.lang.Throwable  , pkg = java.lang
+- java.lang.Void  , pkg = java.lang
+- io.vertx.core.buffer.Buffer  , pkg = io.vertx.core.buffer
+- io.vertx.core.http.WebSocketBase  , pkg = io.vertx.core.http
+- io.vertx.core.streams.WriteStream  , pkg = io.vertx.core.streams
+- io.vertx.core.streams.ReadStream  , pkg = io.vertx.core.streams
+- java.lang.String  , pkg = java.lang
+- io.vertx.core.Handler  , pkg = io.vertx.core
+- io.vertx.core.http.WebSocketFrame  , pkg = io.vertx.core.http
+- io.vertx.core.net.SocketAddress  , pkg = io.vertx.core.net
+## Methods- writeQueueFull()
+- exceptionHandler(handler )
+- handler(handler )
+- pause()
+- resume()
+- endHandler(endHandler )
+- write(data )
+- setWriteQueueMaxSize(maxSize )
+- drainHandler(handler )
+- binaryHandlerID()
+- textHandlerID()
+- writeFrame(frame )
+- writeFinalTextFrame(text )
+- writeFinalBinaryFrame(data )
+- writeBinaryMessage(data )
+- closeHandler(handler )
+- frameHandler(handler )
+- close()
+- remoteAddress()
+- localAddress()
+#method map{resume=[io.vertx.core.http.WebSocketBase resume()], handler=[io.vertx.core.http.WebSocketBase handler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> handler)], binaryHandlerID=[java.lang.String binaryHandlerID()], writeFinalBinaryFrame=[io.vertx.core.http.WebSocketBase writeFinalBinaryFrame(io.vertx.core.buffer.Buffer data)], writeQueueFull=[boolean writeQueueFull()], closeHandler=[io.vertx.core.http.WebSocketBase closeHandler(io.vertx.core.Handler<java.lang.Void> handler)], frameHandler=[io.vertx.core.http.WebSocketBase frameHandler(io.vertx.core.Handler<io.vertx.core.http.WebSocketFrame> handler)], textHandlerID=[java.lang.String textHandlerID()], pause=[io.vertx.core.http.WebSocketBase pause()], setWriteQueueMaxSize=[io.vertx.core.http.WebSocketBase setWriteQueueMaxSize(int maxSize)], drainHandler=[io.vertx.core.http.WebSocketBase drainHandler(io.vertx.core.Handler<java.lang.Void> handler)], endHandler=[io.vertx.core.http.WebSocketBase endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)], localAddress=[io.vertx.core.net.SocketAddress localAddress()], writeBinaryMessage=[io.vertx.core.http.WebSocketBase writeBinaryMessage(io.vertx.core.buffer.Buffer data)], writeFrame=[io.vertx.core.http.WebSocketBase writeFrame(io.vertx.core.http.WebSocketFrame frame)], writeFinalTextFrame=[io.vertx.core.http.WebSocketBase writeFinalTextFrame(java.lang.String text)], exceptionHandler=[io.vertx.core.http.WebSocketBase exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)], write=[io.vertx.core.http.WebSocketBase write(io.vertx.core.buffer.Buffer data)], close=[void close()], remoteAddress=[io.vertx.core.net.SocketAddress remoteAddress()]} 
+- resume , [io.vertx.core.http.WebSocketBase resume()]
+- handler , [io.vertx.core.http.WebSocketBase handler(io.vertx.core.Handler<io.vertx.core.buffer.Buffer> handler)]
+- binaryHandlerID , [java.lang.String binaryHandlerID()]
+- writeFinalBinaryFrame , [io.vertx.core.http.WebSocketBase writeFinalBinaryFrame(io.vertx.core.buffer.Buffer data)]
+- writeQueueFull , [boolean writeQueueFull()]
+- closeHandler , [io.vertx.core.http.WebSocketBase closeHandler(io.vertx.core.Handler<java.lang.Void> handler)]
+- frameHandler , [io.vertx.core.http.WebSocketBase frameHandler(io.vertx.core.Handler<io.vertx.core.http.WebSocketFrame> handler)]
+- textHandlerID , [java.lang.String textHandlerID()]
+- pause , [io.vertx.core.http.WebSocketBase pause()]
+- setWriteQueueMaxSize , [io.vertx.core.http.WebSocketBase setWriteQueueMaxSize(int maxSize)]
+- drainHandler , [io.vertx.core.http.WebSocketBase drainHandler(io.vertx.core.Handler<java.lang.Void> handler)]
+- endHandler , [io.vertx.core.http.WebSocketBase endHandler(io.vertx.core.Handler<java.lang.Void> endHandler)]
+- localAddress , [io.vertx.core.net.SocketAddress localAddress()]
+- writeBinaryMessage , [io.vertx.core.http.WebSocketBase writeBinaryMessage(io.vertx.core.buffer.Buffer data)]
+- writeFrame , [io.vertx.core.http.WebSocketBase writeFrame(io.vertx.core.http.WebSocketFrame frame)]
+- writeFinalTextFrame , [io.vertx.core.http.WebSocketBase writeFinalTextFrame(java.lang.String text)]
+- exceptionHandler , [io.vertx.core.http.WebSocketBase exceptionHandler(io.vertx.core.Handler<java.lang.Throwable> handler)]
+- write , [io.vertx.core.http.WebSocketBase write(io.vertx.core.buffer.Buffer data)]
+- close , [void close()]
+- remoteAddress , [io.vertx.core.net.SocketAddress remoteAddress()]

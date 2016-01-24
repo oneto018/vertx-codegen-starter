@@ -1,0 +1,37 @@
+# @{type.raw.name} - d\n
+@include{'./common.templ'}
+
+##imported types concrete:@{concrete}
+
+
+@{getGroupedImports(importedTypes)} 
+
+
+@foreach{type:importedTypes}
+- @{type.toString}  , pkg = @{helper.getPackageName(type.toString)}\n
+@end{}
+
+## Methods
+
+@foreach{method:methods}
+- @{method.name}(@foreach{param:method.params}@{param.name} @end{','})\n
+@end{}
+
+#method map
+@code{
+	t1 = getGroupedMethods(methods);
+
+	foreach(mth:t1.keySet()){
+		curItem = t1.get(mth);
+		same_airity = get_same_airity_methods(curItem);
+		if(same_airity.size()>0){
+			write_log(same_airity.toString());
+		}
+	}
+}
+
+@{t1} \n
+
+@foreach{item:t1.keySet()}
+	- @{item} , @{t1.get(item)}\n
+@end{}
